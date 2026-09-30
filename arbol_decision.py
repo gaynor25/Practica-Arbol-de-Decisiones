@@ -12,7 +12,7 @@ x_entrenamiento, x_prueba, y_entrenamiento, y_prueba = train_test_split(
     x, y, test_size=0.20, random_state=42
 )
 
-tree = DecisionTreeClassifier(max_depth=2, random_state=42)
+tree = DecisionTreeClassifier(max_depth=3, random_state=42)
 
 tree.fit(x_entrenamiento, y_entrenamiento)
 
