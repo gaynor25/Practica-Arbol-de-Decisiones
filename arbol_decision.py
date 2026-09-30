@@ -16,6 +16,8 @@ tree = DecisionTreeClassifier(max_depth=None, random_state=42)
 
 tree.fit(x_entrenamiento, y_entrenamiento)
 
+print ("Profundidad del arbol:", tree.get_depth())
+
 precision = tree.score(x_prueba, y_prueba)
 
 print("Precisión del modelo:", precision)
